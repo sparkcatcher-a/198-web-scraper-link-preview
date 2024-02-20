@@ -8,12 +8,7 @@ const scrapeMetatags = (text) => {
 
     const urls = Array.from( getUrls(text) );
 
-    // Define a delay function
-    const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-
     const requests = urls.map(async url => {
-        
-        console.log('pagescrape', url)
 
         const res = await fetch(url);
 
@@ -25,24 +20,15 @@ const scrapeMetatags = (text) => {
             $(`meta[name="og:${name}"]`).attr('content') ||  
             $(`meta[name="twitter:${name}"]`).attr('content');
 
-        // Extract data
-
         return { 
             url,
-            monthlyRent: $('div.date-cost p:contains("Monthly rent")').text().replace('Monthly rent', '').trim(),
-            startingFrom: $('div.date-cost p:contains("Starting from")').text().replace('Starting from', '').trim(),
-            until: $('div.date-cost p:contains("Until")').text().replace('Until', '').trim(),
-            streetAddress: $('div.adress-region p:contains("Address")').text().replace('Address', '').trim(),
-            city: $('div.adress-region p:contains("City")').text().replace('City', '').trim(),
-            neighbourhood: $('div.adress-region p:contains("Neighbourhood")').text().replace('Neighbourhood', '').trim(),
-            nearby: $('div.adress-region p:contains("Nearby")').text().replace('Nearby', '').trim(),
             title: $('title').first().text(),
-            description: $('div.mate-content h3:contains("Description")').next('p').text().trim(),
-            lookingFor: $('div.room-content h3:contains("We are looking for")').next('p').text().trim(),
-            weAre: $('div.person-content h3:contains("We are")').next('p').text().trim(),
+            favicon: $('link[rel="shortcut icon"]').attr('href'),
+            // description: $('meta[name=description]').attr('content'),
             description: getMetatag('description'),
+            image: getMetatag('image'),
+            author: getMetatag('author'),
         }
-
     });
 
 
