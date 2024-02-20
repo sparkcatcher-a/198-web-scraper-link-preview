@@ -31,5 +31,16 @@ fs.readFile(htmlFilePath, (err, data) => {
     // Output the links
     console.log('output');
     console.log(links);
+
+    const domain = 'https://www.wgzimmer.ch';
+    const fullLinks = links.map((relativeLink) => {
+        const normalizedRelativeLink = relativeLink.startsWith('/') ? relativeLink : `/${relativeLink}`;
+        return `${domain}${normalizedRelativeLink}`;
+    });
+
+    // Output the modified links with the domain
+    console.log('\nModified Links with Domain:');
+    console.log(fullLinks);
+    
 });
 

@@ -2,3 +2,8 @@
 **/dist
 **/build
 
+functions/package-lock.json
+package-lock.json
+.gitignore
+functions/firebase-debug.1.log
+functions/firebase-debug.log
