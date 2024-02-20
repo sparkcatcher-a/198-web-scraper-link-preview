@@ -1,0 +1,66 @@
+[debug] [2024-02-20T15:20:12.077Z] ----------------------------------------------------------------------
+[debug] [2024-02-20T15:20:12.079Z] Command:       E:\Libraries\Code\node-v18.12.1-win-x64\node.exe E:\Libraries\Code\node-v18.12.1-win-x64\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2024-02-20T15:20:12.079Z] CLI Version:   13.3.0
+[debug] [2024-02-20T15:20:12.079Z] Platform:      win32
+[debug] [2024-02-20T15:20:12.080Z] Node Version:  v18.12.1
+[debug] [2024-02-20T15:20:12.080Z] Time:          Tue Feb 20 2024 16:20:12 GMT+0100 (Central European Standard Time)
+[debug] [2024-02-20T15:20:12.081Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-20T15:20:12.136Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-20T15:20:12.136Z] > authorizing via signed-in user (travis@sparkcatcher.com.au)
+[debug] [2024-02-20T15:20:12.136Z] [iam] checking project fireship-lessons-6d622 for permissions ["firebase.projects.get"]
+[debug] [2024-02-20T15:20:12.138Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-lessons-6d622:testIamPermissions [none]
+[debug] [2024-02-20T15:20:12.138Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-lessons-6d622:testIamPermissions x-goog-quota-user=projects/fireship-lessons-6d622
+[debug] [2024-02-20T15:20:12.138Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-lessons-6d622:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-20T15:20:12.986Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-lessons-6d622:testIamPermissions 200
+[debug] [2024-02-20T15:20:12.986Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fireship-lessons-6d622:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-20T15:20:12.987Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons-6d622 [none]
+[debug] [2024-02-20T15:20:13.402Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons-6d622 200
+[debug] [2024-02-20T15:20:13.402Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons-6d622 {"projectId":"fireship-lessons-6d622","projectNumber":"424783990343","displayName":"fireship-lessons","name":"projects/fireship-lessons-6d622","resources":{"hostingSite":"fireship-lessons-6d622"},"state":"ACTIVE","etag":"1_6f88b076-a9c0-4bfb-8cdd-6cccab2a45c1"}
+[debug] [2024-02-20T15:20:13.404Z] defaultcredentials: writing to file C:\Users\TJ\AppData\Roaming\firebase\travis_sparkcatcher_com.au_application_default_credentials.json
+[debug] [2024-02-20T15:20:13.423Z] Setting GAC to C:\Users\TJ\AppData\Roaming\firebase\travis_sparkcatcher_com.au_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\TJ\\AppData\\Roaming\\firebase\\travis_sparkcatcher_com.au_application_default_credentials.json"}}
+[debug] [2024-02-20T15:20:13.424Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons-6d622/adminSdkConfig [none]
+[debug] [2024-02-20T15:20:13.803Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons-6d622/adminSdkConfig 200
+[debug] [2024-02-20T15:20:13.803Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons-6d622/adminSdkConfig {"projectId":"fireship-lessons-6d622","storageBucket":"fireship-lessons-6d622.appspot.com"}
+[info] i  functions: Watching "E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\" for Cloud Functions..."}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: package.json in functions directory has an engines field which is unsupported. Valid choices are: {"node": 10|12|14|16|18|20}
+
+Deploys to runtimes below Node.js 10 are now disabled in the Firebase CLI. Existing Node.js 8 functions will stop executing at a future date. Update existing functions to Node.js 10 or greater as soon as possible. {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: \u001b[1mpackage.json in functions directory has an engines field which is unsupported. Valid choices are: \u001b[1m{\"node\": 10|12|14|16|18|20}\u001b[22m\u001b[1m\u001b[22m\n\nDeploys to runtimes below Node.js 10 are now disabled in the Firebase CLI. \u001b[1mExisting Node.js 8 functions \u001b[4mwill stop executing at a future date\u001b[24m\u001b[22m. Update existing functions to Node.js 10 or greater as soon as possible."}}
+[debug] [2024-02-20T15:21:53.481Z] File E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\package.json changed, reloading triggers"}}
+[debug] [2024-02-20T15:21:54.485Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-02-20T15:21:55.621Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0",
+    "get-urls": "^9.1.0",
+    "node-fetch": "^2.6.0",
+    "puppeteer": "^1.18.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[debug] [2024-02-20T15:21:55.621Z] Building nodejs source
+[debug] [2024-02-20T15:21:55.622Z] Failed to find version of module node: reached end of search path E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules
+[warn] !  functions: Your requested "node" version "10" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2024-02-20T15:21:55.623Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-20T15:21:55.628Z] Found firebase-functions binary at 'E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8058
+
