@@ -9,14 +9,17 @@ const scrapeMetatags = (text) => {
     const urls = Array.from( getUrls(text) );
 
     // Define a delay function
-    const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+    // const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-    const requests = urls.map(async url => {
-        
+    const requests = urls.map(async (url, index) => {
+        //sdelay does not work on async, consider using proxy when running
+        //if (index > 0) {
+        //    await delay(2000);
+        //}
+
         console.log('pagescrape', url)
 
         const res = await fetch(url);
-
         const html = await res.text();
         const $ = cheerio.load(html);
         

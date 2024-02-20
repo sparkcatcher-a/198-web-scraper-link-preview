@@ -2407,3 +2407,486 @@
 [debug] [2024-02-20T20:30:50.916Z] [worker-us-central1-scraper-965d7922-0fe3-46e2-accb-79445e493414]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-965d7922-0fe3-46e2-accb-79445e493414]: exited"}}
 [debug] [2024-02-20T20:30:50.916Z] [worker-us-central1-scraper-965d7922-0fe3-46e2-accb-79445e493414]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-965d7922-0fe3-46e2-accb-79445e493414]: FINISHED"}}
 [debug] [2024-02-20T20:34:53.826Z] File E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-20T20:34:54.840Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-02-20T20:34:55.820Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0",
+    "get-urls": "^9.2.1",
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^1.18.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[debug] [2024-02-20T20:34:55.820Z] Building nodejs source
+[debug] [2024-02-20T20:34:55.820Z] Failed to find version of module node: reached end of search path E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules
+[warn] !  functions: Your requested "node" version "10" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2024-02-20T20:34:55.821Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-20T20:34:55.825Z] Found firebase-functions binary at 'E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8112
+
+[debug] [2024-02-20T20:34:56.149Z] Got response from /__/functions.yaml {"endpoints":{"scraper":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"scraper"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: scraper. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: scraper."}}
+[debug] [2024-02-20T20:34:58.719Z] [work-queue] {"queuedWork":["/fireship-lessons-6d622/us-central1/scraper-2024-02-20T20:34:58.719Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-20T20:34:58.719Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/fireship-lessons-6d622/us-central1/scraper-2024-02-20T20:34:58.719Z"],"workRunningCount":1}
+[debug] [2024-02-20T20:34:58.719Z] Accepted request POST /fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22 --> us-central1-scraper
+[debug] [2024-02-20T20:34:58.719Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-02-20T20:34:58.719Z] [functions] Got req.url=/fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22, mapping to path=/?%22text%22=%22fireship.io%22 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22, mapping to path=/?%22text%22=%22fireship.io%22"}}
+[debug] [2024-02-20T20:34:58.720Z] [worker-pool] Cleaned up workers for us-central1-scraper: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-scraper: 1 --> 0"}}
+[debug] [2024-02-20T20:34:58.726Z] [worker-pool] addWorker(us-central1-scraper) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-scraper)"}}
+[debug] [2024-02-20T20:34:58.726Z] [worker-pool] Adding worker with key us-central1-scraper, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-scraper, total=1"}}
+[debug] [2024-02-20T20:34:59.743Z] [runtime-status] [2176] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [2176] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"8.13.0\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:34:59.745Z] [runtime-status] [2176] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [2176] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:34:59.745Z] [runtime-status] [2176] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [2176] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-02-20T20:34:59.746Z] [runtime-status] [2176] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [2176] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:34:59.782Z] [runtime-status] [2176] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [2176] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-02-20T20:34:59.782Z] [runtime-status] [2176] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [2176] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-02-20T20:34:59.783Z] [runtime-status] [2176] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [2176] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:34:59.783Z] [runtime-status] [2176] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [2176] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"8.13.0\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:34:59.784Z] [runtime-status] [2176] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [2176] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:34:59.784Z] [runtime-status] [2176] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [2176] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"8.13.0\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-02-20T20:34:59.869Z] [runtime-status] [2176] Functions runtime initialized. {"cwd":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions","node_version":"18.12.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [2176] Functions runtime initialized. {\"cwd\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\",\"node_version\":\"18.12.1\"}"}}
+[debug] [2024-02-20T20:34:59.869Z] [runtime-status] [2176] Listening to port: \\?\pipe\fire_emu_df338efd091a51be {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [2176] Listening to port: \\\\?\\pipe\\fire_emu_df338efd091a51be"}}
+[debug] [2024-02-20T20:34:59.927Z] [worker-us-central1-scraper-8bbf12e4-704e-49fc-8dc8-02e6b4a8462d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-8bbf12e4-704e-49fc-8dc8-02e6b4a8462d]: IDLE"}}
+[debug] [2024-02-20T20:34:59.927Z] [worker-pool] submitRequest(triggerId=us-central1-scraper) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-scraper)"}}
+[info] i  functions: Beginning execution of "us-central1-scraper" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Beginning execution of \"us-central1-scraper\""}}
+[debug] [2024-02-20T20:34:59.928Z] [worker-us-central1-scraper-8bbf12e4-704e-49fc-8dc8-02e6b4a8462d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-8bbf12e4-704e-49fc-8dc8-02e6b4a8462d]: BUSY"}}
+[info] >  { {"user":"{","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m {"}}
+[info] >    text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html' {"user":"  text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m   text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[info] >  pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html {"user":"pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html"}}
+[warn] !  External network resource requested!
+   - URL: "https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html\"\n - Be careful, this may be a production service."}}
+[warn] !  External network resource requested!
+   - URL: "https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html\"\n - Be careful, this may be a production service."}}
+[debug] [2024-02-20T20:35:00.484Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-scraper" in 556.0417ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finished \"us-central1-scraper\" in 556.0417ms"}}
+[debug] [2024-02-20T20:35:00.484Z] [worker-us-central1-scraper-8bbf12e4-704e-49fc-8dc8-02e6b4a8462d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-8bbf12e4-704e-49fc-8dc8-02e6b4a8462d]: IDLE"}}
+[debug] [2024-02-20T20:35:00.484Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-02-20T20:35:00.484Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-02-20T20:35:00.484Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-20T20:35:48.202Z] File E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-20T20:35:49.205Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-02-20T20:35:50.158Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0",
+    "get-urls": "^9.2.1",
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^1.18.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[debug] [2024-02-20T20:35:50.158Z] Building nodejs source
+[debug] [2024-02-20T20:35:50.158Z] Failed to find version of module node: reached end of search path E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules
+[warn] !  functions: Your requested "node" version "10" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2024-02-20T20:35:50.158Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-20T20:35:50.162Z] Found firebase-functions binary at 'E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8837
+
+[debug] [2024-02-20T20:35:50.478Z] Got response from /__/functions.yaml {"endpoints":{"scraper":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"scraper"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: scraper. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: scraper."}}
+[debug] [2024-02-20T20:35:50.490Z] [worker-pool] Shutting down IDLE worker (us-central1-scraper) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-scraper)"}}
+[debug] [2024-02-20T20:35:50.490Z] [worker-us-central1-scraper-8bbf12e4-704e-49fc-8dc8-02e6b4a8462d]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-8bbf12e4-704e-49fc-8dc8-02e6b4a8462d]: FINISHING"}}
+[debug] [2024-02-20T20:35:50.497Z] [worker-us-central1-scraper-8bbf12e4-704e-49fc-8dc8-02e6b4a8462d]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-8bbf12e4-704e-49fc-8dc8-02e6b4a8462d]: exited"}}
+[debug] [2024-02-20T20:35:50.497Z] [worker-us-central1-scraper-8bbf12e4-704e-49fc-8dc8-02e6b4a8462d]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-8bbf12e4-704e-49fc-8dc8-02e6b4a8462d]: FINISHED"}}
+[debug] [2024-02-20T20:35:55.282Z] [work-queue] {"queuedWork":["/fireship-lessons-6d622/us-central1/scraper-2024-02-20T20:35:55.282Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-20T20:35:55.282Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/fireship-lessons-6d622/us-central1/scraper-2024-02-20T20:35:55.282Z"],"workRunningCount":1}
+[debug] [2024-02-20T20:35:55.282Z] Accepted request POST /fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22 --> us-central1-scraper
+[debug] [2024-02-20T20:35:55.282Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-02-20T20:35:55.282Z] [functions] Got req.url=/fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22, mapping to path=/?%22text%22=%22fireship.io%22 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22, mapping to path=/?%22text%22=%22fireship.io%22"}}
+[debug] [2024-02-20T20:35:55.282Z] [worker-pool] Cleaned up workers for us-central1-scraper: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-scraper: 1 --> 0"}}
+[debug] [2024-02-20T20:35:55.289Z] [worker-pool] addWorker(us-central1-scraper) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-scraper)"}}
+[debug] [2024-02-20T20:35:55.289Z] [worker-pool] Adding worker with key us-central1-scraper, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-scraper, total=1"}}
+[debug] [2024-02-20T20:35:56.316Z] [runtime-status] [20544] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [20544] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"8.13.0\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:35:56.317Z] [runtime-status] [20544] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [20544] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:35:56.318Z] [runtime-status] [20544] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [20544] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-02-20T20:35:56.318Z] [runtime-status] [20544] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [20544] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:35:56.354Z] [runtime-status] [20544] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [20544] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-02-20T20:35:56.354Z] [runtime-status] [20544] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [20544] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-02-20T20:35:56.355Z] [runtime-status] [20544] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [20544] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:35:56.356Z] [runtime-status] [20544] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [20544] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"8.13.0\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:35:56.357Z] [runtime-status] [20544] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [20544] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:35:56.357Z] [runtime-status] [20544] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [20544] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"8.13.0\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-02-20T20:35:56.443Z] [runtime-status] [20544] Functions runtime initialized. {"cwd":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions","node_version":"18.12.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [20544] Functions runtime initialized. {\"cwd\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\",\"node_version\":\"18.12.1\"}"}}
+[debug] [2024-02-20T20:35:56.443Z] [runtime-status] [20544] Listening to port: \\?\pipe\fire_emu_46b6da923ce4677c {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [20544] Listening to port: \\\\?\\pipe\\fire_emu_46b6da923ce4677c"}}
+[debug] [2024-02-20T20:35:56.494Z] [worker-us-central1-scraper-0f09eb2d-648a-40b0-8724-4411e27c0e77]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-0f09eb2d-648a-40b0-8724-4411e27c0e77]: IDLE"}}
+[debug] [2024-02-20T20:35:56.494Z] [worker-pool] submitRequest(triggerId=us-central1-scraper) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-scraper)"}}
+[info] i  functions: Beginning execution of "us-central1-scraper" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Beginning execution of \"us-central1-scraper\""}}
+[debug] [2024-02-20T20:35:56.495Z] [worker-us-central1-scraper-0f09eb2d-648a-40b0-8724-4411e27c0e77]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-0f09eb2d-648a-40b0-8724-4411e27c0e77]: BUSY"}}
+[info] >  { {"user":"{","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m {"}}
+[info] >    text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html' {"user":"  text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m   text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[info] >  pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html {"user":"pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html"}}
+[warn] !  External network resource requested!
+   - URL: "https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html\"\n - Be careful, this may be a production service."}}
+[info] >  E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\index.js:51 {"user":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js:51\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js:51\r"}}
+[info] >      return Promise.all(requests); {"user":"    return Promise.all(requests);\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m     return Promise.all(requests);\r"}}
+[info] >                     ^ {"user":"                   ^\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m                    ^\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  TypeError: object is not iterable (cannot read property Symbol(Symbol.iterator)) {"user":"TypeError: object is not iterable (cannot read property Symbol(Symbol.iterator))\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m TypeError: object is not iterable (cannot read property Symbol(Symbol.iterator))\r"}}
+[info] >      at Function.all (<anonymous>) {"user":"    at Function.all (<anonymous>)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Function.all (<anonymous>)\r"}}
+[info] >      at scrapeMetatags (E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\index.js:51:20) {"user":"    at scrapeMetatags (E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js:51:20)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m     at scrapeMetatags (E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js:51:20)\r"}}
+[info] >      at E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\index.js:68:28 {"user":"    at E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js:68:28\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m     at E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js:68:28\r"}}
+[info] >      at cors (E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules\cors\lib\index.js:188:7) {"user":"    at cors (E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\cors\\lib\\index.js:188:7)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m     at cors (E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\cors\\lib\\index.js:188:7)\r"}}
+[info] >      at E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules\cors\lib\index.js:224:17 {"user":"    at E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\cors\\lib\\index.js:224:17\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m     at E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\cors\\lib\\index.js:224:17\r"}}
+[info] >      at originCallback (E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules\cors\lib\index.js:214:15) {"user":"    at originCallback (E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\cors\\lib\\index.js:214:15)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m     at originCallback (E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\cors\\lib\\index.js:214:15)\r"}}
+[info] >      at E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules\cors\lib\index.js:219:13 {"user":"    at E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\cors\\lib\\index.js:219:13\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m     at E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\cors\\lib\\index.js:219:13\r"}}
+[info] >      at optionsCallback (E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules\cors\lib\index.js:199:9) {"user":"    at optionsCallback (E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\cors\\lib\\index.js:199:9)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m     at optionsCallback (E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\cors\\lib\\index.js:199:9)\r"}}
+[info] >      at corsMiddleware (E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules\cors\lib\index.js:204:7) {"user":"    at corsMiddleware (E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\cors\\lib\\index.js:204:7)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m     at corsMiddleware (E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\cors\\lib\\index.js:204:7)\r"}}
+[info] >      at E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\index.js:61:5 {"user":"    at E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js:61:5\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m     at E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js:61:5\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  Node.js v18.12.1 {"user":"Node.js v18.12.1\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m Node.js v18.12.1\r"}}
+[error] i  Request to function failed: Error: socket hang up {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Request to function failed: Error: socket hang up"}}
+[debug] [2024-02-20T20:35:56.548Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-20T20:35:56.552Z] [worker-us-central1-scraper-0f09eb2d-648a-40b0-8724-4411e27c0e77]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-0f09eb2d-648a-40b0-8724-4411e27c0e77]: exited"}}
+[debug] [2024-02-20T20:35:56.552Z] [worker-us-central1-scraper-0f09eb2d-648a-40b0-8724-4411e27c0e77]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-0f09eb2d-648a-40b0-8724-4411e27c0e77]: FINISHED"}}
+[debug] [2024-02-20T20:37:27.869Z] File E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-20T20:37:28.871Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-02-20T20:37:29.825Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0",
+    "get-urls": "^9.2.1",
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^1.18.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[debug] [2024-02-20T20:37:29.825Z] Building nodejs source
+[debug] [2024-02-20T20:37:29.825Z] Failed to find version of module node: reached end of search path E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules
+[warn] !  functions: Your requested "node" version "10" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2024-02-20T20:37:29.826Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-20T20:37:29.830Z] Found firebase-functions binary at 'E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8773
+
+[debug] [2024-02-20T20:37:30.145Z] Got response from /__/functions.yaml {"endpoints":{"scraper":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"scraper"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: scraper. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: scraper."}}
+[debug] [2024-02-20T20:37:33.011Z] [work-queue] {"queuedWork":["/fireship-lessons-6d622/us-central1/scraper-2024-02-20T20:37:33.011Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-20T20:37:33.011Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/fireship-lessons-6d622/us-central1/scraper-2024-02-20T20:37:33.011Z"],"workRunningCount":1}
+[debug] [2024-02-20T20:37:33.011Z] Accepted request POST /fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22 --> us-central1-scraper
+[debug] [2024-02-20T20:37:33.011Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-02-20T20:37:33.012Z] [functions] Got req.url=/fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22, mapping to path=/?%22text%22=%22fireship.io%22 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22, mapping to path=/?%22text%22=%22fireship.io%22"}}
+[debug] [2024-02-20T20:37:33.012Z] [worker-pool] Cleaned up workers for us-central1-scraper: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-scraper: 1 --> 0"}}
+[debug] [2024-02-20T20:37:33.018Z] [worker-pool] addWorker(us-central1-scraper) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-scraper)"}}
+[debug] [2024-02-20T20:37:33.018Z] [worker-pool] Adding worker with key us-central1-scraper, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-scraper, total=1"}}
+[debug] [2024-02-20T20:37:34.041Z] [runtime-status] [38724] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [38724] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"8.13.0\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:37:34.042Z] [runtime-status] [38724] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [38724] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:37:34.043Z] [runtime-status] [38724] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [38724] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-02-20T20:37:34.043Z] [runtime-status] [38724] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [38724] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:37:34.082Z] [runtime-status] [38724] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [38724] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-02-20T20:37:34.083Z] [runtime-status] [38724] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [38724] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-02-20T20:37:34.083Z] [runtime-status] [38724] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [38724] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:37:34.084Z] [runtime-status] [38724] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [38724] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"8.13.0\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:37:34.085Z] [runtime-status] [38724] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [38724] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:37:34.085Z] [runtime-status] [38724] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [38724] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"8.13.0\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-02-20T20:37:34.169Z] [runtime-status] [38724] Functions runtime initialized. {"cwd":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions","node_version":"18.12.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [38724] Functions runtime initialized. {\"cwd\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\",\"node_version\":\"18.12.1\"}"}}
+[debug] [2024-02-20T20:37:34.169Z] [runtime-status] [38724] Listening to port: \\?\pipe\fire_emu_d1d4a52f9baee742 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [38724] Listening to port: \\\\?\\pipe\\fire_emu_d1d4a52f9baee742"}}
+[debug] [2024-02-20T20:37:34.212Z] [worker-us-central1-scraper-ccfced6c-7e82-402a-89b0-b6d16ce36995]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-ccfced6c-7e82-402a-89b0-b6d16ce36995]: IDLE"}}
+[debug] [2024-02-20T20:37:34.212Z] [worker-pool] submitRequest(triggerId=us-central1-scraper) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-scraper)"}}
+[info] i  functions: Beginning execution of "us-central1-scraper" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Beginning execution of \"us-central1-scraper\""}}
+[debug] [2024-02-20T20:37:34.212Z] [worker-us-central1-scraper-ccfced6c-7e82-402a-89b0-b6d16ce36995]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-ccfced6c-7e82-402a-89b0-b6d16ce36995]: BUSY"}}
+[info] >  { {"user":"{","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m {"}}
+[info] >    text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html' {"user":"  text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m   text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[info] >  pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html {"user":"pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html"}}
+[warn] !  External network resource requested!
+   - URL: "https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html\"\n - Be careful, this may be a production service."}}
+[debug] [2024-02-20T20:37:34.253Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-scraper" in 40.9587ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finished \"us-central1-scraper\" in 40.9587ms"}}
+[debug] [2024-02-20T20:37:34.253Z] [worker-us-central1-scraper-ccfced6c-7e82-402a-89b0-b6d16ce36995]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-ccfced6c-7e82-402a-89b0-b6d16ce36995]: IDLE"}}
+[debug] [2024-02-20T20:37:34.254Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-02-20T20:37:34.254Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-02-20T20:37:34.254Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[warn] !  External network resource requested!
+   - URL: "https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html\"\n - Be careful, this may be a production service."}}
+[debug] [2024-02-20T20:38:20.263Z] File E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-20T20:38:21.265Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-02-20T20:38:22.202Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0",
+    "get-urls": "^9.2.1",
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^1.18.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[debug] [2024-02-20T20:38:22.202Z] Building nodejs source
+[debug] [2024-02-20T20:38:22.202Z] Failed to find version of module node: reached end of search path E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules
+[warn] !  functions: Your requested "node" version "10" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2024-02-20T20:38:22.203Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-20T20:38:22.207Z] Found firebase-functions binary at 'E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8371
+
+[debug] [2024-02-20T20:38:22.517Z] Got response from /__/functions.yaml {"endpoints":{"scraper":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"scraper"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: scraper. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: scraper."}}
+[debug] [2024-02-20T20:38:22.529Z] [worker-pool] Shutting down IDLE worker (us-central1-scraper) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-scraper)"}}
+[debug] [2024-02-20T20:38:22.529Z] [worker-us-central1-scraper-ccfced6c-7e82-402a-89b0-b6d16ce36995]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-ccfced6c-7e82-402a-89b0-b6d16ce36995]: FINISHING"}}
+[debug] [2024-02-20T20:38:22.535Z] [worker-us-central1-scraper-ccfced6c-7e82-402a-89b0-b6d16ce36995]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-ccfced6c-7e82-402a-89b0-b6d16ce36995]: exited"}}
+[debug] [2024-02-20T20:38:22.536Z] [worker-us-central1-scraper-ccfced6c-7e82-402a-89b0-b6d16ce36995]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-ccfced6c-7e82-402a-89b0-b6d16ce36995]: FINISHED"}}
+[debug] [2024-02-20T20:38:23.591Z] File E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-20T20:38:24.594Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-02-20T20:38:25.500Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0",
+    "get-urls": "^9.2.1",
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^1.18.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[debug] [2024-02-20T20:38:25.500Z] Building nodejs source
+[debug] [2024-02-20T20:38:25.500Z] Failed to find version of module node: reached end of search path E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules
+[warn] !  functions: Your requested "node" version "10" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2024-02-20T20:38:25.500Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-20T20:38:25.504Z] Found firebase-functions binary at 'E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8438
+
+[debug] [2024-02-20T20:38:25.809Z] Got response from /__/functions.yaml {"endpoints":{"scraper":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"scraper"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: scraper. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: scraper."}}
+[debug] [2024-02-20T20:42:07.511Z] File E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-20T20:42:08.511Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-02-20T20:42:09.526Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0",
+    "get-urls": "^9.2.1",
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^1.18.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[debug] [2024-02-20T20:42:09.526Z] Building nodejs source
+[debug] [2024-02-20T20:42:09.526Z] Failed to find version of module node: reached end of search path E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules
+[warn] !  functions: Your requested "node" version "10" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2024-02-20T20:42:09.526Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-20T20:42:09.531Z] Found firebase-functions binary at 'E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8825
+
+[debug] [2024-02-20T20:42:09.844Z] Got response from /__/functions.yaml {"endpoints":{"scraper":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"scraper"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: scraper. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: scraper."}}
+[debug] [2024-02-20T20:42:12.317Z] [work-queue] {"queuedWork":["/fireship-lessons-6d622/us-central1/scraper-2024-02-20T20:42:12.317Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-20T20:42:12.317Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/fireship-lessons-6d622/us-central1/scraper-2024-02-20T20:42:12.317Z"],"workRunningCount":1}
+[debug] [2024-02-20T20:42:12.317Z] Accepted request POST /fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22 --> us-central1-scraper
+[debug] [2024-02-20T20:42:12.318Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-02-20T20:42:12.318Z] [functions] Got req.url=/fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22, mapping to path=/?%22text%22=%22fireship.io%22 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22, mapping to path=/?%22text%22=%22fireship.io%22"}}
+[debug] [2024-02-20T20:42:12.318Z] [worker-pool] Cleaned up workers for us-central1-scraper: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-scraper: 1 --> 0"}}
+[debug] [2024-02-20T20:42:12.324Z] [worker-pool] addWorker(us-central1-scraper) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-scraper)"}}
+[debug] [2024-02-20T20:42:12.324Z] [worker-pool] Adding worker with key us-central1-scraper, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-scraper, total=1"}}
+[debug] [2024-02-20T20:42:13.341Z] [runtime-status] [13632] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [13632] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"8.13.0\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:42:13.342Z] [runtime-status] [13632] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [13632] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:42:13.343Z] [runtime-status] [13632] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [13632] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-02-20T20:42:13.343Z] [runtime-status] [13632] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [13632] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:42:13.379Z] [runtime-status] [13632] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [13632] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-02-20T20:42:13.379Z] [runtime-status] [13632] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [13632] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-02-20T20:42:13.380Z] [runtime-status] [13632] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [13632] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:42:13.381Z] [runtime-status] [13632] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [13632] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"8.13.0\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:42:13.381Z] [runtime-status] [13632] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [13632] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-20T20:42:13.382Z] [runtime-status] [13632] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [13632] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"8.13.0\",\"resolution\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-02-20T20:42:13.465Z] [runtime-status] [13632] Functions runtime initialized. {"cwd":"E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions","node_version":"18.12.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [13632] Functions runtime initialized. {\"cwd\":\"E:\\\\Libraries\\\\Code\\\\scraper\\\\fireshipwgzimmer\\\\198-web-scraper-link-preview\\\\functions\",\"node_version\":\"18.12.1\"}"}}
+[debug] [2024-02-20T20:42:13.466Z] [runtime-status] [13632] Listening to port: \\?\pipe\fire_emu_7bd249d1d9c0eac2 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[runtime-status] [13632] Listening to port: \\\\?\\pipe\\fire_emu_7bd249d1d9c0eac2"}}
+[debug] [2024-02-20T20:42:13.509Z] [worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: IDLE"}}
+[debug] [2024-02-20T20:42:13.509Z] [worker-pool] submitRequest(triggerId=us-central1-scraper) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-scraper)"}}
+[info] i  functions: Beginning execution of "us-central1-scraper" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Beginning execution of \"us-central1-scraper\""}}
+[debug] [2024-02-20T20:42:13.510Z] [worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: BUSY"}}
+[info] >  { {"user":"{","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m {"}}
+[info] >    text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html' {"user":"  text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m   text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[info] >  pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html {"user":"pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html"}}
+[warn] !  External network resource requested!
+   - URL: "https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html\"\n - Be careful, this may be a production service."}}
+[warn] !  External network resource requested!
+   - URL: "https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html\"\n - Be careful, this may be a production service."}}
+[debug] [2024-02-20T20:42:14.051Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-scraper" in 542.1178ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finished \"us-central1-scraper\" in 542.1178ms"}}
+[debug] [2024-02-20T20:42:14.052Z] [worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: IDLE"}}
+[debug] [2024-02-20T20:42:14.052Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-02-20T20:42:14.052Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-02-20T20:42:14.052Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-20T20:42:38.067Z] [work-queue] {"queuedWork":["/fireship-lessons-6d622/us-central1/scraper-2024-02-20T20:42:38.067Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-20T20:42:38.068Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/fireship-lessons-6d622/us-central1/scraper-2024-02-20T20:42:38.067Z"],"workRunningCount":1}
+[debug] [2024-02-20T20:42:38.068Z] Accepted request POST /fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22 --> us-central1-scraper
+[debug] [2024-02-20T20:42:38.068Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-02-20T20:42:38.068Z] [functions] Got req.url=/fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22, mapping to path=/?%22text%22=%22fireship.io%22 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22, mapping to path=/?%22text%22=%22fireship.io%22"}}
+[debug] [2024-02-20T20:42:38.068Z] [worker-pool] submitRequest(triggerId=us-central1-scraper) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-scraper)"}}
+[info] i  functions: Beginning execution of "us-central1-scraper" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Beginning execution of \"us-central1-scraper\""}}
+[debug] [2024-02-20T20:42:38.069Z] [worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: BUSY"}}
+[info] >  { {"user":"{","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m {"}}
+[info] >    text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html and https://www.wgzimmer.ch/wglink/en/ba2dda08-4dab-4fb2-91ae-68f6bb7c81da/bern/1-4-2024-575-bern.html' {"user":"  text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html and https://www.wgzimmer.ch/wglink/en/ba2dda08-4dab-4fb2-91ae-68f6bb7c81da/bern/1-4-2024-575-bern.html'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m   text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html and https://www.wgzimmer.ch/wglink/en/ba2dda08-4dab-4fb2-91ae-68f6bb7c81da/bern/1-4-2024-575-bern.html'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[info] >  pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html {"user":"pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html"}}
+[info] >  pagescrape https://wgzimmer.ch/wglink/en/ba2dda08-4dab-4fb2-91ae-68f6bb7c81da/bern/1-4-2024-575-bern.html {"user":"pagescrape https://wgzimmer.ch/wglink/en/ba2dda08-4dab-4fb2-91ae-68f6bb7c81da/bern/1-4-2024-575-bern.html","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m pagescrape https://wgzimmer.ch/wglink/en/ba2dda08-4dab-4fb2-91ae-68f6bb7c81da/bern/1-4-2024-575-bern.html"}}
+[warn] !  External network resource requested!
+   - URL: "https://wgzimmer.ch/wglink/en/ba2dda08-4dab-4fb2-91ae-68f6bb7c81da/bern/1-4-2024-575-bern.html"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://wgzimmer.ch/wglink/en/ba2dda08-4dab-4fb2-91ae-68f6bb7c81da/bern/1-4-2024-575-bern.html\"\n - Be careful, this may be a production service."}}
+[warn] !  External network resource requested!
+   - URL: "https://www.wgzimmer.ch/wglink/en/ba2dda08-4dab-4fb2-91ae-68f6bb7c81da/bern/1-4-2024-575-bern.html"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://www.wgzimmer.ch/wglink/en/ba2dda08-4dab-4fb2-91ae-68f6bb7c81da/bern/1-4-2024-575-bern.html\"\n - Be careful, this may be a production service."}}
+[debug] [2024-02-20T20:42:40.515Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-scraper" in 2446.6585ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finished \"us-central1-scraper\" in 2446.6585ms"}}
+[debug] [2024-02-20T20:42:40.516Z] [worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: IDLE"}}
+[debug] [2024-02-20T20:42:40.516Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-02-20T20:42:40.516Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-02-20T20:42:40.516Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-20T20:43:14.588Z] [work-queue] {"queuedWork":["/fireship-lessons-6d622/us-central1/scraper-2024-02-20T20:43:14.588Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-20T20:43:14.588Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/fireship-lessons-6d622/us-central1/scraper-2024-02-20T20:43:14.588Z"],"workRunningCount":1}
+[debug] [2024-02-20T20:43:14.588Z] Accepted request POST /fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22 --> us-central1-scraper
+[debug] [2024-02-20T20:43:14.588Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-02-20T20:43:14.589Z] [functions] Got req.url=/fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22, mapping to path=/?%22text%22=%22fireship.io%22 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/fireship-lessons-6d622/us-central1/scraper?%22text%22=%22fireship.io%22, mapping to path=/?%22text%22=%22fireship.io%22"}}
+[debug] [2024-02-20T20:43:14.589Z] [worker-pool] submitRequest(triggerId=us-central1-scraper) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-scraper)"}}
+[info] i  functions: Beginning execution of "us-central1-scraper" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Beginning execution of \"us-central1-scraper\""}}
+[debug] [2024-02-20T20:43:14.589Z] [worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: BUSY"}}
+[info] >  { {"user":"{","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m {"}}
+[info] >    text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html and https://www.wgzimmer.ch/wglink/en/ba2dda08-4dab-4fb2-91ae-68f6bb7c81da/bern/1-4-2024-575-bern.html and https://www.wgzimmer.ch/wglink/en/499d7082-b827-4364-bc14-f895af9f69c7/bern/6-3-2024-3-mai-2024-350-bern.html' {"user":"  text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html and https://www.wgzimmer.ch/wglink/en/ba2dda08-4dab-4fb2-91ae-68f6bb7c81da/bern/1-4-2024-575-bern.html and https://www.wgzimmer.ch/wglink/en/499d7082-b827-4364-bc14-f895af9f69c7/bern/6-3-2024-3-mai-2024-350-bern.html'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m   text: 'https://www.wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html and https://www.wgzimmer.ch/wglink/en/ba2dda08-4dab-4fb2-91ae-68f6bb7c81da/bern/1-4-2024-575-bern.html and https://www.wgzimmer.ch/wglink/en/499d7082-b827-4364-bc14-f895af9f69c7/bern/6-3-2024-3-mai-2024-350-bern.html'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[info] >  pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html {"user":"pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m pagescrape https://wgzimmer.ch/wglink/en/f2165c82-1d13-4d5e-85cc-ad3a92e9114a/bern/1-4-2024-955-bern.html"}}
+[info] >  pagescrape https://wgzimmer.ch/wglink/en/ba2dda08-4dab-4fb2-91ae-68f6bb7c81da/bern/1-4-2024-575-bern.html {"user":"pagescrape https://wgzimmer.ch/wglink/en/ba2dda08-4dab-4fb2-91ae-68f6bb7c81da/bern/1-4-2024-575-bern.html","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m pagescrape https://wgzimmer.ch/wglink/en/ba2dda08-4dab-4fb2-91ae-68f6bb7c81da/bern/1-4-2024-575-bern.html"}}
+[info] >  pagescrape https://wgzimmer.ch/wglink/en/499d7082-b827-4364-bc14-f895af9f69c7/bern/6-3-2024-3-mai-2024-350-bern.html {"user":"pagescrape https://wgzimmer.ch/wglink/en/499d7082-b827-4364-bc14-f895af9f69c7/bern/6-3-2024-3-mai-2024-350-bern.html","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"\u001b[90m> \u001b[39m pagescrape https://wgzimmer.ch/wglink/en/499d7082-b827-4364-bc14-f895af9f69c7/bern/6-3-2024-3-mai-2024-350-bern.html"}}
+[warn] !  External network resource requested!
+   - URL: "https://wgzimmer.ch/wglink/en/499d7082-b827-4364-bc14-f895af9f69c7/bern/6-3-2024-3-mai-2024-350-bern.html"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://wgzimmer.ch/wglink/en/499d7082-b827-4364-bc14-f895af9f69c7/bern/6-3-2024-3-mai-2024-350-bern.html\"\n - Be careful, this may be a production service."}}
+[warn] !  External network resource requested!
+   - URL: "https://www.wgzimmer.ch/wglink/en/499d7082-b827-4364-bc14-f895af9f69c7/bern/6-3-2024-3-mai-2024-350-bern.html"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://www.wgzimmer.ch/wglink/en/499d7082-b827-4364-bc14-f895af9f69c7/bern/6-3-2024-3-mai-2024-350-bern.html\"\n - Be careful, this may be a production service."}}
+[debug] [2024-02-20T20:43:17.095Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-scraper" in 2506.5685ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finished \"us-central1-scraper\" in 2506.5685ms"}}
+[debug] [2024-02-20T20:43:17.096Z] [worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: IDLE"}}
+[debug] [2024-02-20T20:43:17.096Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-02-20T20:43:17.096Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-02-20T20:43:17.096Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-20T20:45:50.851Z] File E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js changed, reloading triggers"}}
