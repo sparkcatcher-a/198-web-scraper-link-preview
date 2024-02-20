@@ -39,7 +39,7 @@ const scrapeMetatags = (text) => {
             city: $('div.adress-region p:contains("City")').text().replace('City', '').trim(),
             neighbourhood: $('div.adress-region p:contains("Neighbourhood")').text().replace('Neighbourhood', '').trim(),
             nearby: $('div.adress-region p:contains("Nearby")').text().replace('Nearby', '').trim(),
-            title: $('title').first().text(),
+            //title: $('title').first().text(),
             description: $('div.mate-content h3:contains("Description")').next('p').text().trim(),
             lookingFor: $('div.room-content h3:contains("We are looking for")').next('p').text().trim(),
             weAre: $('div.person-content h3:contains("We are")').next('p').text().trim(),

@@ -2890,3 +2890,91 @@
 [debug] [2024-02-20T20:43:17.096Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"Finishing up request with event=close"}}
 [debug] [2024-02-20T20:43:17.096Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
 [debug] [2024-02-20T20:45:50.851Z] File E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-20T20:45:51.853Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-02-20T20:45:53.013Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0",
+    "get-urls": "^9.2.1",
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^1.18.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[debug] [2024-02-20T20:45:53.013Z] Building nodejs source
+[debug] [2024-02-20T20:45:53.013Z] Failed to find version of module node: reached end of search path E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules
+[warn] !  functions: Your requested "node" version "10" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2024-02-20T20:45:53.014Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-20T20:45:53.018Z] Found firebase-functions binary at 'E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8586
+
+[debug] [2024-02-20T20:45:53.374Z] Got response from /__/functions.yaml {"endpoints":{"scraper":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"scraper"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: scraper. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: scraper."}}
+[debug] [2024-02-20T20:45:53.386Z] [worker-pool] Shutting down IDLE worker (us-central1-scraper) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-scraper)"}}
+[debug] [2024-02-20T20:45:53.386Z] [worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: FINISHING"}}
+[debug] [2024-02-20T20:45:53.393Z] [worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: exited"}}
+[debug] [2024-02-20T20:45:53.393Z] [worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-scraper"},"extension":{},"message":"[worker-us-central1-scraper-f8f2c0ef-b4b8-4d89-98bb-968c09f10989]: FINISHED"}}
+[debug] [2024-02-20T21:29:27.572Z] File E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\modifiedLinks.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\modifiedLinks.json changed, reloading triggers"}}
+[debug] [2024-02-20T21:29:28.577Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-02-20T21:29:32.635Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0",
+    "get-urls": "^9.2.1",
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^1.18.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[debug] [2024-02-20T21:29:32.635Z] Building nodejs source
+[debug] [2024-02-20T21:29:32.635Z] Failed to find version of module node: reached end of search path E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules
+[warn] !  functions: Your requested "node" version "10" doesn't match your global version "18". Using node@18 from host. 
+[debug] [2024-02-20T21:29:32.636Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-20T21:29:32.643Z] Found firebase-functions binary at 'E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8023
+
+[debug] [2024-02-20T21:29:35.217Z] Got response from /__/functions.yaml {"endpoints":{"scraper":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"scraper"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: scraper. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: scraper."}}
+[debug] [2024-02-20T21:46:52.910Z] File E:\Libraries\Code\scraper\fireshipwgzimmer\198-web-scraper-link-preview\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File E:\\Libraries\\Code\\scraper\\fireshipwgzimmer\\198-web-scraper-link-preview\\functions\\index.js changed, reloading triggers"}}
