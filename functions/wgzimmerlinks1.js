@@ -41,6 +41,25 @@ fs.readFile(htmlFilePath, (err, data) => {
     // Output the modified links with the domain
     console.log('\nModified Links with Domain:');
     console.log(fullLinks);
-    
+
+    // Format the data for Insomnia
+    const concatenatedLinks = fullLinks.join(' and ');
+    const jsonReady = { text: concatenatedLinks };
+
+    // Convert the array to JSON
+    const jsonData = JSON.stringify(jsonReady, null, 2);
+
+    // Specify the path to the output JSON file
+    const outputFilePath = path.join(__dirname, 'modifiedLinks.json');
+
+    // Write the JSON data to the file
+    fs.writeFile(outputFilePath, jsonData, 'utf8', (err) => {
+        if (err) {
+            console.error('Error writing JSON file:', err);
+            return;
+        }
+        console.log(`JSON file written successfully at: ${outputFilePath}`);
+    });
+
 });
 
