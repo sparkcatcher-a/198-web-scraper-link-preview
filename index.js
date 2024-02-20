@@ -44,11 +44,8 @@ const cors = require('cors')({ origin: true});
 exports.scraper = functions.https.onRequest( async (request, response) => {
     cors(request, response, async () => {
 
-        console.log(request.body); 
-        //apparently dont need to pasre the json it is coming in as an object already?
-        // const body = JSON.parse(request.body);
-        //so just
-        const body = request.body;
+
+        const body = JSON.parse(request.body);
         const data = await scrapeMetatags(body.text);
 
         response.send(data)
